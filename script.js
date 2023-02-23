@@ -24,8 +24,22 @@ if( weatherChoice== 'sunny'){
     document.write("Thanks for sharing!")
 }}
 
-greeting();
-weather();
+function flowerChoice(){
+let flowerChoice = prompt("What flower is your favorite? Poppies, Tulips or Wildflowers?");
+    console.log(flowerChoice);
+    weatherChoice = flowerChoice.toLowerCase();
+                 
+if( flowerChoice == 'poppies'){
+        document.write("I love poppies too! ");
+    }else if (flowerChoice == 'tulips'){
+        document.write("Tulips are my favorite spring flower. ");
+    }else if (flowerChoice == 'wildflowers'){
+        document.write("Wildflowers are so beautiful to see. Thanks for sharing")
+    }else {
+        document.write("I am sorry I don't know the flower " + flowerChoice + ". Please select from Poppies, Tulips or Wildflowers.")
+}
+}
+
 
 //anatomy of a function
 
