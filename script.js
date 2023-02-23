@@ -1,60 +1,17 @@
-
-// alert("Welcome to my website! ");
-
-// let <--  lets you change it
-// const <-- constant can't be changed
-// var <-- bad practice in 102
-// (none) <-- bad practice in 102
-// variables must have unique names 
-
-// you can create a variable with not value
-
-let myFavFood;
-myFavFood = "bread";
-console.log(myFavFood);
-
-// Data Types
-// String --> "text", "42"
-// numbers --> 42, 32, 44
-// boolean --> true/false
-
-console.log("Hello World");
-let myFavColor = "yellow";
-console.log(myFavColor);
-
-// Right click and go to inspect on website - the developer tools
-// Select console at the top
-
-myFavColor = "purple";
-console.log(myFavColor);
-
-// if we change let to const it will give an error because const cannot be changed
-
-// prompt("What is your name?");
-// the pop up showed, but we need to access the information
-// can store it as a variable
-
-
+function greeting(){
 let userName = prompt("Hello - What is your name? ");
 console.log(userName);
 alert("Hello " + userName);
-
-// dynamic components are using javascript to put something on your actual page
-
-// writing to the HTML document
+}
 
 
-document.write("Welcome "+ userName + "!");
 
-
-// if (time = 12){"Happy noon!"}
-// if () {} else if (){}
-// if (this is true) execute code if  (THIS is true){execute code}else {execute code}
-
+function weather (){
 let weatherChoice = prompt("Would you rather it be sunny, raining or snowing outside?");
 console.log(weatherChoice);
 weatherChoice = weatherChoice.toLowerCase();
 console.log(weatherChoice);
+
 if( weatherChoice== 'sunny'){
     document.write("I love the sun as well! Unfortunately, it is rare in Oregon to have sun. ");
     let favActivity= prompt ("Do you have a favorite place to travel that is sunny? ");
@@ -65,7 +22,70 @@ if( weatherChoice== 'sunny'){
     document.write("The snow is my least favorite because I don't like to be cold.");
 }else {
     document.write("Thanks for sharing!")
-}
+}}
 
-// does not have () because it is a catch all for everything else that can happen
+greeting();
+weather();
+
+//anatomy of a function
+
+// function declaration / function definition
+// function functionName - do not name functions the same as a variable
+// functionName() the place where you put parameters followed by a code block {code or steps it will do}
+// pay attention to different colors
+// parameters go inside the function
+
+// function addTwoNumbers(){
+//     let num1 = 5;
+//     let num2 = 10;
+//     let sum = num1+num2;
+//     console.log(num1+num2);
+//     return sum;
+//     // return statement must be the last item in the function
+// }
+
+// let response = prompt("say something");
+// let newNumber = addTwoNumbers();
+
+// addTwoNumbers();
+// console.log(num1);
+
+//return statements not required
+
+
+
+// function addTwoNumbers(num1, num2){
+//         let sum = num1 + num2;
+//         console.log(sum);
+//         return sum;
+// //return statement must be the last item in the function
+//  }
+
+//  addTwoNumbers(5,10);
+//  addTwoNumbers(10,10);
+//  addTwoNumbers(12,8);
+//  addTwoNumbers("hello", "world");
+
+
+//  function addTwoNumbers(potato, banana){
+//     let sum = potato + banana;
+//     console.log(sum);
+//     return sum;
+// //return statement must be the last item in the function
+// }
+//addTwoNumbers();
+
+
+// function addTwoNumbers(num1, num2){
+//     let sum = num1 + num2;
+//     console.log(sum);
+//     return sum;
+// //return statement must be the last item in the function
+// }
+
+// addTwoNumbers(prompt("Select a number between 1 & 5"),prompt("Select another number between 1 & 5"));
+//addTwoNumbers(10,10);
+//addTwoNumbers(12,8);
+//addTwoNumbers("hello", "world");
+
 
