@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 
 header {
@@ -7,6 +7,9 @@ header {
     width: 70%;
     margin: auto;
     height: 100px;
+    color: red;
+    font-size: 18px;
+    font-family:helvetica;
 }
 
 h1 {
@@ -33,9 +36,10 @@ p {
 }
 
 #mainFlower {
-    height: 400px;
-    width: 400px;
+    height: 10%;
     border: 5px solid white;
+    position: relative;
+     left: 15%;
 }
 
 #mainArticle p {
@@ -43,6 +47,7 @@ p {
     padding: 10px;
     font-size: medium;
     font-family: helvetica;
+    height: 20%;
 }
 
 .group {
@@ -79,4 +84,11 @@ nav li {
 
 a {
     color: white;
+}
+
+#topSection {
+    color: red;
+    font-family:helvetica;
+    font-size: 18px;
+    margin:auto;
 }

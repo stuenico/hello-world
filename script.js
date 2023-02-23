@@ -1,5 +1,5 @@
-let myName = "Nicole";
-alert("Welcome to my website!" +  myName);
+
+// alert("Welcome to my website! ");
 
 // let <--  lets you change it
 // const <-- constant can't be changed
@@ -35,7 +35,7 @@ console.log(myFavColor);
 // can store it as a variable
 
 
-let userName = prompt("What is your name?");
+let userName = prompt("Hello - What is your name? ");
 console.log(userName);
 alert("Hello " + userName);
 
@@ -43,26 +43,28 @@ alert("Hello " + userName);
 
 // writing to the HTML document
 
-document.write("Hello World");
-document.write("Welcome"+ userName);
+
+document.write("Welcome "+ userName + "!");
 
 
 // if (time = 12){"Happy noon!"}
-
-
-let coffeeChoice = prompt("Do you like coffee? Yes or No?");
-console.log(coffeeChoice);
-
 // if () {} else if (){}
 // if (this is true) execute code if  (THIS is true){execute code}else {execute code}
 
-if(coffeeChoice == 'yes'){
-    document.write("I like coffee too!");
-    let favBrand = prompt ("What is your favorite brand?");
-} else if (coffeeChoice =='no'){
-    document.write("Do you like cooca?");
-} else {
-    document.write("I'm not sure what you picked...");
+let weatherChoice = prompt("Would you rather it be sunny, raining or snowing outside?");
+console.log(weatherChoice);
+weatherChoice = weatherChoice.toLowerCase();
+console.log(weatherChoice);
+if( weatherChoice== 'sunny'){
+    document.write("I love the sun as well! Unfortunately, it is rare in Oregon to have sun. ");
+    let favActivity= prompt ("Do you have a favorite place to travel that is sunny? ");
+    document.write(favActivity + "! That sounds amazing!");
+} else if (weatherChoice =='raining'){
+    document.write("I love the rain too! My favorite thing to do is run in the rain. ");
+} else if (weatherChoice =='snowing'){
+    document.write("The snow is my least favorite because I don't like to be cold.");
+}else {
+    document.write("Thanks for sharing!")
 }
 
 // does not have () because it is a catch all for everything else that can happen
