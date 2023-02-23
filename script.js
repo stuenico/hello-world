@@ -1,45 +1,60 @@
-function greeting(){
-let userName = prompt("Hello - What is your name? ");
-console.log(userName);
-alert("Hello " + userName);
+// function greeting(){
+// let userName = prompt("Hello - What is your name? ");
+// console.log(userName);
+// alert("Hello " + userName);
+// }
+
+
+
+function addFlowers(){
+    let num1 = prompt("How many flowers would you like to see today?");
+    let num2 = prompt("Is that enough? How many more would you like to see?");
+    let sum = parseInt(num1) + parseInt(num2);
+    console.log(sum);
+    document.write(sum);
+    let img = document.createElement("img");
+    img.src = "flower.png";
+    return sum;
 }
+    
 
 
 
-function weather (){
-let weatherChoice = prompt("Would you rather it be sunny, raining or snowing outside?");
-console.log(weatherChoice);
-weatherChoice = weatherChoice.toLowerCase();
-console.log(weatherChoice);
 
-if( weatherChoice== 'sunny'){
-    document.write("I love the sun as well! Unfortunately, it is rare in Oregon to have sun. ");
-    let favActivity= prompt ("Do you have a favorite place to travel that is sunny? ");
-    document.write(favActivity + "! That sounds amazing!");
-} else if (weatherChoice =='raining'){
-    document.write("I love the rain too! My favorite thing to do is run in the rain. ");
-} else if (weatherChoice =='snowing'){
-    document.write("The snow is my least favorite because I don't like to be cold.");
-}else {
-    document.write("Thanks for sharing!")
-}}
+// function weather (){
+// let weatherChoice = prompt("Would you rather it be sunny, raining or snowing outside?");
+// console.log(weatherChoice);
+// weatherChoice = weatherChoice.toLowerCase();
+// console.log(weatherChoice);
 
-function flowerChoice(){
-let flowerChoice = prompt("What flower is your favorite? Poppies, Tulips or Wildflowers?");
-    console.log(flowerChoice);
-    weatherChoice = flowerChoice.toLowerCase();
+// if( weatherChoice== 'sunny'){
+//     document.write("I love the sun as well! Unfortunately, it is rare in Oregon to have sun. ");
+//     let favActivity= prompt ("Do you have a favorite place to travel that is sunny? ");
+//     document.write(favActivity + "! That sounds amazing!");
+// } else if (weatherChoice =='raining'){
+//     document.write("I love the rain too! My favorite thing to do is run in the rain. ");
+// } else if (weatherChoice =='snowing'){
+//     document.write("The snow is my least favorite because I don't like to be cold.");
+// }else {
+//     document.write("Thanks for sharing!")
+// }}
+
+// function flowerChoice(){
+// let flowerChoice = prompt("How many flowers would you like to see?");
+//     console.log(flowerChoice);
+//     weatherChoice = flowerChoice.toLowerCase();
                  
-if( flowerChoice == 'poppies'){
-        document.write("I love poppies too! ");
-    }else if (flowerChoice == 'tulips'){
-        document.write("Tulips are my favorite spring flower. ");
-    }else if (flowerChoice == 'wildflowers'){
-        document.write("Wildflowers are so beautiful to see. Thanks for sharing")
-    }else {
-        let flowerChoice = ""
-        document.write("I am sorry I don't know the flower " + flowerChoice + ". Please select from Poppies, Tulips or Wildflowers.")
-}
-}
+// if( flowerChoice == 5){
+//         document.write("I love poppies too! ");
+//     }else if (flowerChoice == 'tulips'){
+//         document.write("Tulips are my favorite spring flower. ");
+//     }else if (flowerChoice == 'wildflowers'){
+//         document.write("Wildflowers are so beautiful to see. Thanks for sharing")
+//     }else {
+//         let flowerChoice = ""
+//         document.write("I am sorry I don't know the flower " + flowerChoice + ". Please select from Poppies, Tulips or Wildflowers.")
+// }
+// }
 
 
 //anatomy of a function
