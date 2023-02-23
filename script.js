@@ -36,6 +36,7 @@ if( flowerChoice == 'poppies'){
     }else if (flowerChoice == 'wildflowers'){
         document.write("Wildflowers are so beautiful to see. Thanks for sharing")
     }else {
+        let flowerChoice = ""
         document.write("I am sorry I don't know the flower " + flowerChoice + ". Please select from Poppies, Tulips or Wildflowers.")
 }
 }
