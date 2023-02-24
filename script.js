@@ -20,7 +20,7 @@ function favFood() {
     while (userGuess != "chocolate") {
         userGuess = prompt("That is wrong. Hint...I like something sweet. ");
     } 
-    if (userGuess == "bread"){
+    if else (userGuess == "bread"){
         userGuess =prompt("That is wrong. Try again. ");
     } else {
         document.write("That is correct! I love chocolate.")
