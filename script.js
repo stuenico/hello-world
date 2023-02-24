@@ -3,7 +3,7 @@ function greeting() {
     console.log(userName);
     alert("Hello " + userName);
 }
-// greeting();
+greeting();
     
 
 function imageRepeat() {
