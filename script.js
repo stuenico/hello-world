@@ -4,12 +4,18 @@ function greeting() {
     alert("Hello " + userName);
 }
 greeting();
-    
+
 
 function imageRepeat() {
-    let userGuess = prompt("Pick a number between 1 & 5.");
-    for (let i = 0; i < userGuess; i++) {
-        document.write('<img class="from-js" src="flower.png" />');
+    let userGuess = parseInt(prompt("Pick a number between 1 & 5."));
+    if (userGuess <= 5) {
+        console.log("user has " + userGuess + " flowers");
+        for (let i = 0; i < userGuess; i++) {
+            document.write('<img class="from-js" src="flower.png" />');
+        }
+    } else {
+        alert("You have to pick a number between 1 & 5. ");
+        imageRepeat();
     }
 }
 imageRepeat();
@@ -20,7 +26,7 @@ function favFood() {
     while (userGuess != "chocolate") {
         userGuess = prompt("That is wrong. Hint...I like something sweet. ");
     } 
-    if else (userGuess == "bread"){
+    if (userGuess == "bread"){
         userGuess =prompt("That is wrong. Try again. ");
     } else {
         document.write("That is correct! I love chocolate.")
@@ -28,6 +34,8 @@ function favFood() {
 
 }
 favFood();
+
+
 
 
 
@@ -117,5 +125,16 @@ favFood();
 //addTwoNumbers(10,10);
 //addTwoNumbers(12,8);
 //addTwoNumbers("hello", "world");
+
+// function displayRating() {
+
+//     let output = '';
+//     let rating = prompt('scale of 1-5, how many stars?');
+//     for(let i = 0; i < rating; i++){
+//         output += "<img class='star' src='images/star.png'/>";
+//     }
+
+//     return document.write(output);
+// }
 
 
