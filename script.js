@@ -3,7 +3,7 @@ function greeting() {
     console.log(userName);
     alert("Hello " + userName);
 }
-greeting();
+// greeting();
     
 
 function imageRepeat() {
@@ -12,20 +12,36 @@ function imageRepeat() {
         document.write('<img class="from-js" src="flower.png" />');
     }
 }
-imageRepeat();
+// imageRepeat();
 
 
-// function favColor() {
-//     let userGuess = prompt("What is your favorite color?");
-//     if (userGuess == "yellow" || userGuess == "YELLOW") {
-//         console.log("That is correct!");
-//     } else {
-//         console.log("That is wrong.");
-//     }
-// }
-// favColor();
+function favFood() {
+    let userGuess = prompt("What is my favorite food? Choose from chocolate, bread or fish.");
+    while (userGuess != "chocolate") {
+        userGuess = prompt("That is wrong. Hint...I like something sweet. ");
+    } 
+    if (userGuess == "bread"){
+        userGuess =prompt("That is wrong. Try again. ");
+    } else {
+        document.write("That is correct! I love chocolate.")
+    }
+
+}
+// favFood();
 
 
+
+// function favColor(){
+//   let userGuess = prompt("What is my favorite color?");
+//   while (userGuess != "yellow"){
+//     userGuess = prompt("That is not correct. Try again. What is my favorite color?")
+//   }
+// if (userGuess == "yellow"){
+//   console.log("That is correct!");
+// } else {
+//   console.log("That is wrong.");
+// }}
+//   favColor();
 
 function weather() {
     let weatherChoice = prompt("Would you rather it be sunny, raining or snowing outside?");
