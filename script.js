@@ -51,8 +51,8 @@ function weather() {
 
     if (weatherChoice == 'sunny') {
         document.write("I love the sun as well! Unfortunately, it is rare in Oregon to have sun. ");
-        let favActivity = prompt("Do you have a favorite place to travel that is sunny? ");
-        document.write(favActivity + "! That sounds amazing!");
+        // let favActivity = prompt("Do you have a favorite place to travel that is sunny? ");
+        // document.write(favActivity + "! That sounds amazing!");
     } else if (weatherChoice == 'raining') {
         document.write("I love the rain too! My favorite thing to do is run in the rain. ");
     } else if (weatherChoice == 'snowing') {
