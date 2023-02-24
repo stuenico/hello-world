@@ -12,7 +12,7 @@ function imageRepeat() {
         document.write('<img class="from-js" src="flower.png" />');
     }
 }
-// imageRepeat();
+imageRepeat();
 
 
 function favFood() {
@@ -27,7 +27,7 @@ function favFood() {
     }
 
 }
-// favFood();
+favFood();
 
 
 
@@ -43,42 +43,42 @@ function favFood() {
 // }}
 //   favColor();
 
-function weather() {
-    let weatherChoice = prompt("Would you rather it be sunny, raining or snowing outside?");
-    console.log(weatherChoice);
-    weatherChoice = weatherChoice.toLowerCase();
-    console.log(weatherChoice);
+// function weather() {
+//     let weatherChoice = prompt("Would you rather it be sunny, raining or snowing outside?");
+//     console.log(weatherChoice);
+//     weatherChoice = weatherChoice.toLowerCase();
+//     console.log(weatherChoice);
 
-    if (weatherChoice == 'sunny') {
-        document.write("I love the sun as well! Unfortunately, it is rare in Oregon to have sun. ");
-        // let favActivity = prompt("Do you have a favorite place to travel that is sunny? ");
-        // document.write(favActivity + "! That sounds amazing!");
-    } else if (weatherChoice == 'raining') {
-        document.write("I love the rain too! My favorite thing to do is run in the rain. ");
-    } else if (weatherChoice == 'snowing') {
-        document.write("The snow is my least favorite because I don't like to be cold. ");
-    } else {
-        document.write("Thanks for sharing!")
-    }
-}
+//     if (weatherChoice == 'sunny') {
+//         document.write("I love the sun as well! Unfortunately, it is rare in Oregon to have sun. ");
+//         // let favActivity = prompt("Do you have a favorite place to travel that is sunny? ");
+//         // document.write(favActivity + "! That sounds amazing!");
+//     } else if (weatherChoice == 'raining') {
+//         document.write("I love the rain too! My favorite thing to do is run in the rain. ");
+//     } else if (weatherChoice == 'snowing') {
+//         document.write("The snow is my least favorite because I don't like to be cold. ");
+//     } else {
+//         document.write("Thanks for sharing!")
+//     }
+// }
 
 
-function flowerChoice() {
-    let flowerChoice = prompt("What is your favorite flower? Please choose from poppies, tulips or wildflowers.");
-    console.log(flowerChoice);
-    weatherChoice = flowerChoice.toLowerCase();
+// function flowerChoice() {
+//     let flowerChoice = prompt("What is your favorite flower? Please choose from poppies, tulips or wildflowers.");
+//     console.log(flowerChoice);
+//     weatherChoice = flowerChoice.toLowerCase();
 
-    if (flowerChoice == 5) {
-        document.write("I love poppies too! ");
-    } else if (flowerChoice == 'tulips') {
-        document.write("Tulips are my favorite spring flower. ");
-    } else if (flowerChoice == 'wildflowers') {
-        document.write("Wildflowers are so beautiful to see. Thanks for sharing")
-    } else {
-        let flowerChoice = ""
-        document.write("I am sorry I don't know the flower " + flowerChoice + ". Please select from Poppies, Tulips or Wildflowers.")
-    }
-}
+//     if (flowerChoice == 5) {
+//         document.write("I love poppies too! ");
+//     } else if (flowerChoice == 'tulips') {
+//         document.write("Tulips are my favorite spring flower. ");
+//     } else if (flowerChoice == 'wildflowers') {
+//         document.write("Wildflowers are so beautiful to see. Thanks for sharing")
+//     } else {
+//         let flowerChoice = ""
+//         document.write("I am sorry I don't know the flower " + flowerChoice + ". Please select from Poppies, Tulips or Wildflowers.")
+//     }
+// }
 
 
 
